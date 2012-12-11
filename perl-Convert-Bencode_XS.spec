@@ -43,3 +43,14 @@ rm -rf %buildroot
 %{perl_vendorarch}/Convert*
 %{_mandir}/man3/*
 
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.60.0-2
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Wed Mar 09 2011 Sandro Cazzaniga <kharec@mandriva.org> 0.60.0-1
++ Revision: 643051
+- import perl-Convert-Bencode_XS
+
