@@ -7,7 +7,7 @@ Release:	4
 Summary:        Faster conversions to/from Bencode format
 License:        GPL+ or Artistic
 Group:          Development/Perl
-URL:            http://search.cpan.org/dist/Convert-Bencode_XS/
+URL:            https://search.cpan.org/dist/Convert-Bencode_XS/
 Source0:        http://www.cpan.org/authors/id/I/IW/IWADE/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:  perl(Exporter)
 BuildRequires:  perl(ExtUtils::MakeMaker)
