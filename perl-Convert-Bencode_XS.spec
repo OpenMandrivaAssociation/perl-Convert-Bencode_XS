@@ -1,14 +1,12 @@
 %define upstream_name Convert-Bencode_XS
-%define upstream_version 0.06
-
 Name:           perl-%{upstream_name}
-Version:        %perl_convert_version %{upstream_version}
-Release:	4
+Version:        0.06
+Release:	5
 Summary:        Faster conversions to/from Bencode format
 License:        GPL+ or Artistic
 Group:          Development/Perl
-URL:            https://search.cpan.org/dist/Convert-Bencode_XS/
-Source0:        http://www.cpan.org/authors/id/I/IW/IWADE/%{upstream_name}-%{upstream_version}.tar.gz
+URL:            https://metacpan.org/dist/Convert-Bencode_XS/
+Source0:        http://www.cpan.org/authors/id/I/IW/IWADE/%{upstream_name}-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:  perl(Exporter)
 BuildRequires:  perl(ExtUtils::MakeMaker)
@@ -21,7 +19,7 @@ This module provides two functions, bencode and bdecode, which encode and
 decode bencoded strings respectively.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor 
