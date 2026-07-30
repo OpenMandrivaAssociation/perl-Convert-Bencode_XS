@@ -2,7 +2,7 @@
 %define upstream_version 0.06
 Name:           perl-%{upstream_name}
 Version:	0.06
-Release:	5
+Release:	6
 Summary:        Faster conversions to/from Bencode format
 License:        GPL+ or Artistic
 Group:          Development/Perl
@@ -13,7 +13,6 @@ BuildRequires:  perl(Exporter)
 BuildRequires:  perl(ExtUtils::MakeMaker)
 BuildRequires:  perl(Test::More)
 BuildRequires:	perl-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module provides two functions, bencode and bdecode, which encode and
@@ -23,7 +22,7 @@ decode bencoded strings respectively.
 %setup -q -n Convert-Bencode_XS-0.06
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor 
+perl Makefile.PL INSTALLDIRS=vendor 
 %make
 
 %check
