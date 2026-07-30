@@ -1,12 +1,13 @@
 %define upstream_name Convert-Bencode_XS
+%define upstream_version 0.06
 Name:           perl-%{upstream_name}
-Version:        0.06
-Release:	5
+Version:	0.06
+Release:	1
 Summary:        Faster conversions to/from Bencode format
 License:        GPL+ or Artistic
 Group:          Development/Perl
 URL:            https://metacpan.org/dist/Convert-Bencode_XS/
-Source0:        http://www.cpan.org/authors/id/I/IW/IWADE/%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/I/IW/IWADE/Convert-Bencode_XS-0.06.tar.gz
 BuildRequires:	make
 BuildRequires:  perl(Exporter)
 BuildRequires:  perl(ExtUtils::MakeMaker)
@@ -43,13 +44,4 @@ rm -rf %buildroot
 %{_mandir}/man3/*
 
 
-
-%changelog
-* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.60.0-2
-+ Revision: 768358
-- svn commit -m mass rebuild of perl extension against perl 5.14.2
-
-* Wed Mar 09 2011 Sandro Cazzaniga <kharec@mandriva.org> 0.60.0-1
-+ Revision: 643051
-- import perl-Convert-Bencode_XS
 
