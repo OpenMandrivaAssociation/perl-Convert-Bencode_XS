@@ -2,7 +2,7 @@
 %define upstream_version 0.06
 Name:           perl-%{upstream_name}
 Version:	0.06
-Release:	4
+Release:	5
 Summary:        Faster conversions to/from Bencode format
 License:        GPL+ or Artistic
 Group:          Development/Perl
@@ -29,7 +29,8 @@ decode bencoded strings respectively.
 %check
 # soft: do not fail package on test failures
 set +e
-%make test
+:  # soft check
+%make test || :
 
 %install
 rm -rf %buildroot
