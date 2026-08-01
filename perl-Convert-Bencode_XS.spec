@@ -2,7 +2,7 @@
 %define upstream_version 0.06
 Name:           perl-%{upstream_name}
 Version:	0.06
-Release:	7
+Release:	8
 Summary:        Faster conversions to/from Bencode format
 License:        GPL+ or Artistic
 Group:          Development/Perl
@@ -29,6 +29,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 # soft: do not fail package on test failures
 set +e
 :  # soft check
+make test || :
 %make test || :
 
 %install
