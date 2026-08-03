@@ -2,7 +2,7 @@
 %define upstream_version 0.06
 Name:           perl-%{upstream_name}
 Version:	0.06
-Release:	8
+Release:	9
 Summary:        Faster conversions to/from Bencode format
 License:        GPL+ or Artistic
 Group:          Development/Perl
